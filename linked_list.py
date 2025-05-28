@@ -2,7 +2,8 @@ class Node:
     def __init__(self, data=None, next=None):
         self.data = data
         self.next = None
-
+#   | data | next | -> |data|next|
+#   head -> None 
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -17,15 +18,15 @@ class LinkedList:
             last_node = last_node.next
         last_node.next = new_node
         
-        def display(self):
-            current_node = self.head
-            if not current_node:
-                print("A lista está vazia")
-                return 
-            print("Sua lista:")
-            while current_node:
-                print(current_node.data)
-                current_node = current_node.next
+    def display(self):
+        current_node = self.head
+        if not current_node:
+            print("A lista está vazia")
+            return 
+        print("Sua lista:")
+        while current_node:
+            print(current_node.data)
+            current_node = current_node.next
 
 
 
