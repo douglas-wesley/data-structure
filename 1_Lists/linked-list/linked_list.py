@@ -1,9 +1,12 @@
+
+'''Implementação Básica sobre um "NÓ"'''
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-#   | data | next | -> |data|next|
-#   head -> None 
+
+
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -81,18 +84,19 @@ class LinkedList:
         self.head = previous_node
 
 
-my_list = LinkedList()
-my_list.display()
+if __name__ == "__main__":
+    my_list = LinkedList()
+    my_list.display()
 
-my_list.append(3)
-my_list.append(7)
-my_list.append(8)
-my_list.append(6)
+    my_list.append(3)
+    my_list.append(7)
+    my_list.append(8)
+    my_list.append(6)
 
-my_list.display()
-print(f"Total de números é {str(my_list.lenght())}")
-print(my_list.to_list())
-print('---------')
+    my_list.display()
+    print(f"Total de números é {str(my_list.lenght())}")
+    print(my_list.to_list())
+    print('---------')
 
-my_list.reverse_linkedlist()
-my_list.display()
+    my_list.reverse_linkedlist()
+    my_list.display()
