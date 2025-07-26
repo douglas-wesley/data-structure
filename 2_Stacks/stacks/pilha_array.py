@@ -1,5 +1,5 @@
 # Pilhas são praticamentes listas no Python 
-# Seguindo o estilo FIFO (First-in First-out) eles possuem apenas 2 funções 
+# Seguindo o estilo LIFO (Last-in First-out) eles possuem apenas 2 funções 
 # append() -> Coloca um elemento no final da lista/pilha
 # pop() -> Retira o ultimo elemento da lista/pilha
 
